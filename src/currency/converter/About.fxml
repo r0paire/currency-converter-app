@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1011.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="currency.converter.About">
+   <children>
+      <AnchorPane layoutY="-7.0" prefHeight="593.0" prefWidth="988.0" style="-fx-background-color: #E1E1E1;">
+         <children>
+            <VBox layoutX="-5.0" layoutY="79.0" prefHeight="514.0" prefWidth="158.0" style="-fx-background-color: #181818;" />
+            <Button id="homeBtn" fx:id="homeBtn" layoutY="104.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: #2056FF;" text="Home" textFill="WHITE" />
+            <Button id="currencyBtn" fx:id="currencyBtn" layoutY="188.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: green;" text="Currencies" textFill="WHITE" />
+            <Button id="conversionBtn" fx:id="conversionBtn" layoutY="270.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: orange;" text="Conversion" textFill="WHITE" />
+            <Button id="aboutBtn" fx:id="aboutBtn" layoutY="352.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: silver;" text="About" textFill="WHITE" />
+            <Button id="exitBtn" fx:id="exitBtn" layoutY="511.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE" />
+            <Pane id="logoPane" fx:id="logoPane" prefHeight="80.0" prefWidth="152.0" style="-fx-background-color: black;">
+               <children>
+                  <ImageView id="logoImage" fx:id="logoImage" fitHeight="57.0" fitWidth="64.0" layoutX="31.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/exchange.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Label id="aboutLabel" fx:id="aboutLabel" alignment="CENTER" layoutX="237.0" layoutY="97.0" prefHeight="39.0" prefWidth="572.0" text="About" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label id="aboutText" fx:id="aboutText" layoutX="190.0" layoutY="146.0" prefHeight="118.0" prefWidth="743.0" text="This is a currency converter application coded in Java using JavaFX. It provides a list of supported currencies and allows for the conversion between them." wrapText="true">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <Label id="jdkLabel" fx:id="jdkLabel" layoutX="190.0" layoutY="511.0" prefHeight="39.0" prefWidth="57.0" text="Java:" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label id="jfxLabel" fx:id="jfxLabel" layoutX="543.0" layoutY="511.0" prefHeight="39.0" prefWidth="57.0" text="JavaFX:" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField id="jdkText" fx:id="jdkText" editable="false" layoutX="190.0" layoutY="541.0" prefHeight="33.0" prefWidth="152.0" style="-fx-background-color: white;" text="JDK 15.0.1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <TextField id="jfxText" fx:id="jfxText" editable="false" layoutX="543.0" layoutY="541.0" prefHeight="33.0" prefWidth="152.0" style="-fx-background-color: white;" text="JavaFX SDK 16">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <Label id="r0paireLabel" fx:id="r0paireLabel" layoutX="770.0" layoutY="557.0" prefHeight="28.0" prefWidth="244.0" text="Developed by r0paire (2021)" wrapText="true">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label id="versionLabel" fx:id="versionLabel" alignment="CENTER" layoutX="188.0" layoutY="472.0" prefHeight="39.0" prefWidth="335.0" text="Java versions used for development:" underline="true" wrapText="true">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label id="repoLabel" fx:id="repoLabel" layoutX="586.0" layoutY="478.0" prefHeight="28.0" prefWidth="369.0" text="Repo @ https://www.github.com/r0paire/currency-converter-app" textFill="#0095ff" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="13.0" />
+               </font>
+            </Label>
+            <ImageView id="githubLogo" fx:id="githubLogo" fitHeight="39.0" fitWidth="77.0" layoutX="586.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/githubLogo.png" />
+               </image>
+            </ImageView>
+            <Button id="repoTextBtn" fx:id="repoTextBtn" layoutX="586.0" layoutY="481.0" minHeight="14.0" mnemonicParsing="false" opacity="0.16" prefHeight="14.0" prefWidth="369.0" text="Button" />
+            <ImageView id="javaLogo" fx:id="javaLogo" fitHeight="57.0" fitWidth="69.0" layoutX="299.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/java.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Accordion />
+    <AnchorPane layoutX="152.0" minHeight="0.0" minWidth="0.0" prefHeight="72.0" prefWidth="862.0" style="-fx-background-color: black;">
+         <children>
+            <Label id="titleLabel" fx:id="titleLabel" prefHeight="72.0" prefWidth="289.0" text="Currency Converter" textFill="#cd9d00" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <FlowPane id="titleFlowPane" fx:id="titleFlowPane" layoutX="152.0" layoutY="1.0" prefHeight="72.0" prefWidth="743.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

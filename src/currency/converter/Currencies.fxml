@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1011.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="currency.converter.Currencies">
+   <children>
+      <AnchorPane layoutY="-7.0" prefHeight="589.0" prefWidth="1011.0" style="-fx-background-color: #E1E1E1;">
+         <children>
+            <VBox layoutX="-5.0" layoutY="79.0" prefHeight="514.0" prefWidth="158.0" style="-fx-background-color: #181818;" />
+            <Button id="homeBtn" fx:id="homeBtn" layoutY="104.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: #2056FF;" text="Home" textFill="WHITE" />
+            <Button id="currencyBtn" fx:id="currencyBtn" layoutY="188.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: green;" text="Currencies" textFill="WHITE" />
+            <Button id="conversionBtn" fx:id="conversionBtn" layoutY="270.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: orange;" text="Conversion" textFill="WHITE" />
+            <Button id="aboutBtn" fx:id="aboutBtn" layoutY="352.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: silver;" text="About" textFill="WHITE" />
+            <Button id="exitBtn" fx:id="exitBtn" layoutY="511.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="152.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE" />
+            <Pane id="logoPane" fx:id="logoPane" prefHeight="80.0" prefWidth="152.0" style="-fx-background-color: black;" />
+            <ImageView id="logoImage" fx:id="logoImage" fitHeight="57.0" fitWidth="64.0" layoutX="31.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exchange.png" />
+               </image>
+            </ImageView>
+            <Label id="currenciesTitleLabel" fx:id="currenciesTitleLabel" alignment="CENTER" layoutX="190.0" layoutY="97.0" prefHeight="39.0" prefWidth="572.0" text="Currencies">
+               <font>
+                  <Font name="Segoe UI Bold" size="27.0" />
+               </font>
+            </Label>
+            <Label id="currenciesTextLabel" fx:id="currenciesTextLabel" layoutX="190.0" layoutY="146.0" prefHeight="161.0" prefWidth="743.0" text="The following are a list of currencies which are supported by this application. To find more information about the currency, please select it." wrapText="true">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <MenuButton id="currenciesMenu" fx:id="currenciesMenu" alignment="CENTER" layoutX="215.0" layoutY="307.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="426.0" style="-fx-background-color: #CBFEB3;" text="Currencies">
+              <items>
+                  <MenuItem id="audBtn" fx:id="audBtn" mnemonicParsing="false" text="Australian Dollar [AUD] (A$)" />
+                  <MenuItem id="brlBtn" fx:id="brlBtn" mnemonicParsing="false" text="Brazilian Real [BRL] (R$)" />
+                  <MenuItem id="bgnBtn" fx:id="bgnBtn" mnemonicParsing="false" text="Bulgarian lev [BGN] (Лв)" />
+                  <MenuItem id="cadBtn" fx:id="cadBtn" mnemonicParsing="false" text="Canadian Dollar [CAD] (C$)" />
+                  <MenuItem id="cnyBtn" fx:id="cnyBtn" mnemonicParsing="false" text="Chinese Yuan Renimbi [CNY] (¥) " />
+                  <MenuItem id="hrkBtn" fx:id="hrkBtn" mnemonicParsing="false" text="Croatian Kuna [HRK] (kn)" />
+                  <MenuItem id="czkBtn" fx:id="czkBtn" mnemonicParsing="false" text="Czech Koruna [CZK] (Kč)" />
+                  <MenuItem id="dkkBtn" fx:id="dkkBtn" mnemonicParsing="false" text="Danish Krone [DKK] (Kr)" />
+                  <MenuItem id="egpBtn" fx:id="egpBtn" mnemonicParsing="false" text="Egyptian Pound [EGP] (£E)" />
+                  <MenuItem id="etbBtn" fx:id="etbBtn" mnemonicParsing="false" text="Ethiopian Birr [ETB] (Br)" />
+                  <MenuItem id="eurBtn" fx:id="eurBtn" mnemonicParsing="false" text="Euro [EUR] (€)" />
+                  <MenuItem id="hkdBtn" fx:id="hkdBtn" mnemonicParsing="false" text="Hong Kong Dollar [HKD] (HK$)" />
+                  <MenuItem id="hufBtn" fx:id="hufBtn" mnemonicParsing="false" text="Hungarian Forint [HUF] (Ft)" />
+                  <MenuItem id="ikrBtn" fx:id="ikrBtn" mnemonicParsing="false" text="Icelandic króna [IKR] (kr)" />
+                  <MenuItem id="inrBtn" fx:id="inrBtn" mnemonicParsing="false" text="Indian Rupee [INR] (₹)" />
+                  <MenuItem id="irrBtn" fx:id="irrBtn" mnemonicParsing="false" text="Iranian Rial [IRR] (﷼)" />
+                  <MenuItem id="jpyBtn" fx:id="jpyBtn" mnemonicParsing="false" text="Japanese Yen [JPY] (¥)" />
+                  <MenuItem id="mxnBtn" fx:id="mxnBtn" mnemonicParsing="false" text="Mexican Peso [MXN] (MX$)" />
+                  <MenuItem id="ngnBtn" fx:id="ngnBtn" mnemonicParsing="false" text="Nigerian Naira [NGN] (₦)" />
+                  <MenuItem id="nokBtn" fx:id="nokBtn" mnemonicParsing="false" text="Norweigan Krone [NOK] (kr)" />
+                  <MenuItem id="pkrBtn" fx:id="pkrBtn" mnemonicParsing="false" text="Pakistan Rupee [PKR] (Rs)" />
+                  <MenuItem id="plzBtn" fx:id="plzBtn" mnemonicParsing="false" text="Polish Złoty [PLZ] (zł)" />
+                  <MenuItem id="gbpBtn" fx:id="gbpBtn" mnemonicParsing="false" text="Pound Sterling [GBP] (£)" />
+                  <MenuItem id="ronBtn" fx:id="ronBtn" mnemonicParsing="false" text="Romanian Leu [RON] (L)" />
+                  <MenuItem id="rubBtn" fx:id="rubBtn" mnemonicParsing="false" text="Russian Ruble [RUB] (₽)" />
+                  <MenuItem id="sarBtn" fx:id="sarBtn" mnemonicParsing="false" text="Saudi Riyal [SAR] (SAR)" />
+                  <MenuItem id="rsdBtn" fx:id="rsdBtn" mnemonicParsing="false" text="Serbian Dinar [RSD] (din) " />
+                  <MenuItem id="sgdBtn" fx:id="sgdBtn" mnemonicParsing="false" text="Singaporean Dollar [SGD] (S$)" />
+                  <MenuItem id="zarBtn" fx:id="zarBtn" mnemonicParsing="false" text="South African Rand [ZAR] (R)" />
+                  <MenuItem id="krwBtn" fx:id="krwBtn" mnemonicParsing="false" text="South Korean Won [KRW] (₩)" />
+                  <MenuItem id="sekBtn" fx:id="sekBtn" mnemonicParsing="false" text="Swedish Krona [SEK] (kr)" />
+                  <MenuItem id="chfBtn" fx:id="chfBtn" mnemonicParsing="false" text="Swiss Francs [CHF] (CHf)" />
+                  <MenuItem id="tryBtn" fx:id="tryBtn" mnemonicParsing="false" text="Turkish Lira [TRY] (₺)" />
+                  <MenuItem id="usdBtn" fx:id="usdBtn" mnemonicParsing="false" text="US Dollar [USD] ($)" />
+              </items>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </MenuButton>
+            <TextArea id="currencyDetailsText" fx:id="currencyDetailsText" editable="false" layoutX="215.0" layoutY="352.0" prefHeight="200.0" prefWidth="432.0" promptText="Details about currency here" wrapText="true" />
+            <ImageView id="currencyFlag" fx:id="currencyFlag" fitHeight="194.0" fitWidth="245.0" layoutX="688.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <Accordion />
+    <AnchorPane layoutX="152.0" minHeight="0.0" minWidth="0.0" prefHeight="72.0" prefWidth="859.0" style="-fx-background-color: black;">
+         <children>
+            <Label id="titleLabel" fx:id="titleLabel" prefHeight="72.0" prefWidth="289.0" text="Currency Converter" textFill="#cd9d00" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <FlowPane id="titleFlowPane" fx:id="titleFlowPane" layoutX="152.0" layoutY="1.0" prefHeight="72.0" prefWidth="859.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
