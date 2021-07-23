@@ -686,7 +686,7 @@ public class Conversion implements Initializable {
 
     public void conversion(String fromCurrency, String toCurrency) throws IOException, ParseException {
         // API-key (get a free one at exchangerate-api.com to use their API)
-        String apiKey = "15778a570d407694b419736a";
+        String apiKey = "insert-api-key-here";
 
         // Setting URL
         if (left2RightRadioBtn.isSelected()) {
